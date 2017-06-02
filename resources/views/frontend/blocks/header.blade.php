@@ -17,7 +17,7 @@
               <div class="pull-right">
                 <nav class="header-top-nav">
                   <ul>
-                    <li><a href="{!! url('dang-ky') !!}"><i class="fa fa-user"></i> Đăng ký</a></li>
+                    <li><a href="{!! url('register') !!}"><i class="fa fa-user"></i> Register</a></li>
                     <li><a href="{!! url('dang-nhap') !!}"><i class="fa fa-sign-out"></i>Đăng nhập</a></li>
                   </ul>
                 </nav>
@@ -58,7 +58,7 @@
             <div class="col-md-9 col-sm-9 hidden-xs">
               <nav class="header-nav">
                 <ul>
-                  <li class="@yield('trangchu')"> <a href="{!! url('/') !!}">Trang chủ </a> </li>
+                  <li class="@yield('trangchu')"> <a href="{!! url('/') !!}">Home </a> </li>
                   <li> <a href="#">Giới thiệu </a> </li>
                   <li class="@yield('sanpham')"> <a href="{!! url('san-pham') !!}">Sản phẩm <i class="fa fa-caret-down"></i></a>
                     <ul>
@@ -75,8 +75,8 @@
                       @endforeach
                     </ul>
                   </li>
-                  <li class="@yield('tintuc')"> <a href="{!! url('tin-tuc') !!}">Tin tức </a> </li>
-                  <li class="@yield('lienhe')"> <a href="{!! url('lien-he') !!}">Liên hệ </a> </li>
+                  <li class="@yield('article')"> <a href="{!! url('article') !!}">News </a> </li>
+                  <li class="@yield('contact')"> <a href="{!! url('contact') !!}">Contact </a> </li>
                 </ul>
               </nav>
             </div>

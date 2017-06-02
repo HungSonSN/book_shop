@@ -3,11 +3,11 @@
     <div class="mm-panel mm-hasnavbar mm-opened mm-current" id="mm-1">
       <div class="mm-navbar"><a class="mm-title">Menu</a></div>
       <ul class="mm-listview">
-        <li> <a href="/" title="">Trang chủ</a> </li>
+        <li> <a href="/" title="">Home</a> </li>
         <li> <a href="/gioi-thieu" title="">Giới thiệu</a> </li>
         <li> <a class="mm-next" href="#mm-2" data-target="#mm-2"></a><a href="/collections/all" title="">Sản phẩm</a> </li>
-        <li> <a href="/tin-tuc" title="">Tin tức</a> </li>
-        <li> <a href="/lien-he" title="">Liên hệ</a> </li>
+        <li> <a href="/article" title="">News</a> </li>
+        <li> <a href="/contact" title="">Contact</a> </li>
       </ul>
     </div>
     <div class="mm-panel mm-hasnavbar mm-hidden" id="mm-2">

@@ -6,11 +6,11 @@
           <div class="footer-menu">
             <h3>Thông tin</h3>
             <ul>
-              <li><a href="/" title="">Trang chủ</a></li>
+              <li><a href="/" title="">Home</a></li>
               <li><a href="/gioi-thieu" title="">Giới thiệu</a></li>
               <li><a href="/collections/all" title="">Sản phẩm</a></li>
-              <li><a href="/tin-tuc" title="">Tin tức</a></li>
-              <li><a href="/lien-he" title="">Liên hệ</a></li>
+              <li><a href="/article" title="">News</a></li>
+              <li><a href="/contact" title="">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -33,14 +33,14 @@
               <li><a href="/search" title="">Tìm kiếm</a></li>
               <li><a href="/huong-dan" title="">Hướng dẫn</a></li>
               <li><a href="/account/login" title="">Đăng nhập</a></li>
-              <li><a href="/account/register" title="">Đăng ký</a></li>
+              <li><a href="/account/register" title="">Register</a></li>
               <li><a href="/cart" title="">Giỏ hàng</a></li>
             </ul>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="footer-contact">
-            <h3>Liên hệ</h3>
+            <h3>Contact</h3>
             <ul>
               <li><i class="fa fa-home"></i>
                 <p>Quận 8. TP. HỒ CHÍ MINH</p>

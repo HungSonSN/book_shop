@@ -277,7 +277,7 @@ INSERT INTO `migrations` (`migration`, `batch`) VALUES
 ('2016_02_07_070516_create_hoadons_table', 4),
 ('2016_02_07_070856_create_chitiethoadons_table', 5),
 ('2016_02_08_081735_create_contacts_table', 6),
-('2016_02_09_014105_create_tintucs_table', 7);
+('2016_02_09_014105_create_articles_table', 7);
 
 -- --------------------------------------------------------
 
@@ -344,10 +344,10 @@ INSERT INTO `product_images` (`id`, `image`, `product_id`, `created_at`, `update
 -- --------------------------------------------------------
 
 --
--- Structure de la table `tintucs`
+-- Structure de la table `articles`
 --
 
-CREATE TABLE IF NOT EXISTS `tintucs` (
+CREATE TABLE IF NOT EXISTS `articles` (
   `id` int(10) unsigned NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `alias` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -362,10 +362,10 @@ CREATE TABLE IF NOT EXISTS `tintucs` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `tintucs`
+-- Contenu de la table `articles`
 --
 
-INSERT INTO `tintucs` (`id`, `name`, `alias`, `intro`, `content`, `image`, `keyword`, `description`, `user_id`, `created_at`, `updated_at`) VALUES
+INSERT INTO `articles` (`id`, `name`, `alias`, `intro`, `content`, `image`, `keyword`, `description`, `user_id`, `created_at`, `updated_at`) VALUES
 (3, 'fdsvzxvcxvxc  444', 'fdsvzxvcxvxc-444', '<p>\r\n	dsfds</p>\r\n', '<p>\r\n	sdfds</p>\r\n', 'db.png', '', '', 1, '2016-02-10 17:47:53', '2016-02-10 18:07:34');
 
 -- --------------------------------------------------------
@@ -432,11 +432,11 @@ ALTER TABLE `product_images`
   ADD KEY `product_images_product_id_foreign` (`product_id`);
 
 --
--- Index pour la table `tintucs`
+-- Index pour la table `articles`
 --
-ALTER TABLE `tintucs`
+ALTER TABLE `articles`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `tintucs_user_id_foreign` (`user_id`);
+  ADD KEY `articles_user_id_foreign` (`user_id`);
 
 --
 -- Index pour la table `users`
@@ -485,9 +485,9 @@ ALTER TABLE `products`
 ALTER TABLE `product_images`
   MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=36;
 --
--- AUTO_INCREMENT pour la table `tintucs`
+-- AUTO_INCREMENT pour la table `articles`
 --
-ALTER TABLE `tintucs`
+ALTER TABLE `articles`
   MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT pour la table `users`
@@ -525,10 +525,10 @@ ALTER TABLE `product_images`
   ADD CONSTRAINT `product_images_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE;
 
 --
--- Contraintes pour la table `tintucs`
+-- Contraintes pour la table `articles`
 --
-ALTER TABLE `tintucs`
-  ADD CONSTRAINT `tintucs_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+ALTER TABLE `articles`
+  ADD CONSTRAINT `articles_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

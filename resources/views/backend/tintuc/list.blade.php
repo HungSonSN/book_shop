@@ -1,7 +1,7 @@
 @extends('backend.master')
 @section('controller','Sản phẩm')
 @section('action','Danh sách')
-@section('tintuc','active')
+@section('article','active')
 @section('list_tt', 'active')
 @section('content')
  <section class="content">
@@ -20,22 +20,22 @@
                       </tr>
                     </thead>
                     <tbody>
-                    @foreach($tintuc as $tintucs)
+                    @foreach($article as $articles)
                       <tr>
-                        <td>{!! $tintucs["name"] !!}</td>
-                        <td><img src="{!! asset('public/upload/tintuc/'.$tintucs["image"]) !!}" width="30" alt="{!! $tintucs["name"] !!}"></td>
+                        <td>{!! $articles["name"] !!}</td>
+                        <td><img src="{!! asset('public/upload/article/'.$articles["image"]) !!}" width="30" alt="{!! $articles["name"] !!}"></td>
                         <td><?php
-                              $puser = DB::table('users')->where('id',$tintucs["user_id"])->first();
+                              $puser = DB::table('users')->where('id',$articles["user_id"])->first();
                               echo $puser->username;
                           ?></td>
                         <td>
                         {!!
-                        \Carbon\Carbon::createFromTimeStamp(strtotime($tintucs["created_at"]))->diffForHumans();
+                        \Carbon\Carbon::createFromTimeStamp(strtotime($articles["created_at"]))->diffForHumans();
                         !!}
                      </td>
                         <td>
-                          <a href="{!! url('admin/tintuc/delete',$tintucs["id"]) !!}">Xóa</a>
-                          <a href="{!! url('admin/tintuc/edit',$tintucs["id"]) !!}">Sữa</a>
+                          <a href="{!! url('admin/article/delete',$articles["id"]) !!}">Xóa</a>
+                          <a href="{!! url('admin/article/edit',$articles["id"]) !!}">Sữa</a>
                         </td>
                       </tr>
                       @endforeach
@@ -43,7 +43,7 @@
                   </table>
                   <div class="pull-right">
                     <?php //$arrProduct->setPath('list'); ?>
-                    <?php //echo $arrProduct->render(); ?>                 
+                    <?php //echo $arrProduct->render(); ?>
                   </div>
                 </div><!-- /.box-body -->
               </div><!-- /.box -->
@@ -52,5 +52,5 @@
             </div><!-- /.col -->
           </div><!-- /.row -->
         </section>
-    
+
 @stop

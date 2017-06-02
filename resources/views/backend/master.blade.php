@@ -45,7 +45,7 @@
             <ul class="nav navbar-nav">
               <li>
                 <a href="{!! url('/')!!}" target="new">Xem Website</a>
-              </li>                 
+              </li>
               <!-- Messages: style can be found in dropdown.less-->
               <li class="dropdown messages-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -203,7 +203,7 @@
       <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
-         
+
           <!-- search form -->
           <form action="#" method="get" class="sidebar-form">
             <div class="input-group">
@@ -218,11 +218,11 @@
           <ul class="sidebar-menu">
             <li class="@yield('trangchu') treeview">
               <a href="{!! url('admin') !!}">
-                <i class="fa fa-dashboard"></i> <span>Trang chủ Admin</span>
+                <i class="fa fa-dashboard"></i> <span>Home Admin</span>
               </a>
             </li>
 
-            
+
             <li class="treeview @yield('danhmuc')">
               <a href="javascript:void(0)">
                 <i class="fa fa-pencil-square-o"></i> <span>Quản lý danh mục</span>
@@ -257,14 +257,14 @@
 
               </ul>
             </li>
-            <li class="treeview @yield('tintuc')">
+            <li class="treeview @yield('article')">
               <a href="javascript:void(0)">
                 <i class="fa fa-navicon"></i> <span>Quản lý bài viết</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li class="@yield('them_tt')"><a href="{!! url('admin/tintuc/add') !!}"><i class="fa fa-circle-o"></i> Thêm bài viết</a></li>
-                <li class="@yield('list_tt')"><a href="{!! url('admin/tintuc/list') !!}"><i class="fa fa-circle-o"></i> Danh sách bài viết</a></li>
+                <li class="@yield('them_tt')"><a href="{!! url('admin/article/add') !!}"><i class="fa fa-circle-o"></i> Thêm bài viết</a></li>
+                <li class="@yield('list_tt')"><a href="{!! url('admin/article/list') !!}"><i class="fa fa-circle-o"></i> Danh sách bài viết</a></li>
                 <li><a href="{!! url('admin/catenew/add') !!}"><i class="fa fa-circle-o"></i> Thêm danh mục</a></li>
               	<li><a href="{!! url('admin/catenew/list') !!}"><i class="fa fa-circle-o"></i> Danh mục bài biết</a></li>
               </ul>
@@ -294,7 +294,7 @@
             <small>@yield('action')</small>
           </h1>
         </section>
-                <div class="col-lg-12" style="margin-top:12px;"> 
+                <div class="col-lg-12" style="margin-top:12px;">
                         @if(Session::has('flash_message'))
                             <div class="alert alert-{!! Session::get('flash_level') !!}">
                                 {!! Session::get('flash_message') !!}
@@ -312,13 +312,13 @@
         </div>
         <strong>Copyright &copy; 2016</strong>
       </footer>
-      
+
       <!-- Add the sidebar's background. This div must be placed
            immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
     </div><!-- ./wrapper -->
 
-    
+
 
 <script src="{{ url('public/backend/js/app.min.js') }}"></script>
 <script src="{{ url('public/backend/js/bootstrap-datepicker.js') }}"></script>

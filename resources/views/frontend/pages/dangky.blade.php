@@ -1,5 +1,5 @@
 @extends('frontend.master')
-@section('title','Đăng ký')
+@section('title','Register')
 @section('content')
 <div id="content">
   <section class="">
@@ -7,8 +7,8 @@
       <div class="row">
         <div class="col-md-12">
           <ul class="breadcrumb">
-            <li><a href="{!! url('/') !!}">Trang chủ</a></li>
-            <li class="active">Đăng ký</li>
+            <li><a href="{!! url('/') !!}">Home</a></li>
+            <li class="active">Register</li>
           </ul>
         </div>
       </div>
@@ -20,7 +20,7 @@
         <div class="col-md-12">
           <div class="form-style form-login">
             <form accept-charset="UTF-8" action="" id="customer_register" method="post">
-              <h3 class="form-heading">Đăng ký tài khoản</h3>
+              <h3 class="form-heading">Register tài khoản</h3>
               <p class="form-description">Nếu bạn có một tài khoản, xin vui lòng chuyển qua trang đăng nhập.</p>
               <div class="row">
                 <div class="col-md-1">
@@ -30,7 +30,7 @@
                   <input type="text" value="{!! old('username') !!}" name="username">
                 </div>
               </div>
-              
+
               <div class="row">
                 <div class="col-md-1">
                   <p class="text-right">Mật khẩu <span>*</span></p>
@@ -74,8 +74,8 @@
               <div class="row">
                 <div class="col-md-1"> </div>
                 <div class="col-md-11">
-                  <p><a href="{!! url('dang-ky') !!}">Đăng nhập</a></p>
-                  <button class="comment-submit">Đăng ký</button>
+                  <p><a href="{!! url('Register') !!}">Đăng nhập</a></p>
+                  <button class="comment-submit">Register</button>
                 </div>
               </div>
             </form>

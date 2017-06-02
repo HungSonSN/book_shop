@@ -139,10 +139,10 @@ class PageController extends Controller {
 		$danhgia->save();
 		return "oke";
 	}
-	public function lienhe(){
+	public function contact(){
 		return view('frontend.pages.contact');
 	}
-	public function postlienhe(DanhgiaRequest $request){
+	public function postcontact(DanhgiaRequest $request){
 		$data = [
 			'name' => $_POST['name'],
 			'email' => $_POST['email'],
@@ -165,6 +165,6 @@ class PageController extends Controller {
 		return view('frontend.pages.dangky');
 	}
 	public function postDangky(){
-		
+
 	}
 }

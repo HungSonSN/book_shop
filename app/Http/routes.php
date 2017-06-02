@@ -25,13 +25,13 @@ Route::group(['prefix' =>'admin','middleware' => 'auth'],function(){
 		Route::get('delimg/{id}',['as' => 'admin.product.getDelImg','uses' => 'ProductContoller@getDelImg']);
 		Route::get('listdanhgia',['as' => 'admin.product.listDanhgia','uses' => 'ProductContoller@getDanhgia']);
 	});
-	Route::group(['prefix' => 'tintuc'],function(){
-		Route::get('add',['as' => 'admin.tintuc.getAdd','uses' => 'ArticleController@getAdd']);
-		Route::post('add',['as' => 'admin.tintuc.postAdd','uses' => 'ArticleController@postAdd']);
-		Route::get('list',['as' =>'admin.tintuc.getList','uses' => 'ArticleController@getList']);
-		Route::get('delete/{id}',['as' =>'admin.tintuc.getDelete','uses' => 'ArticleController@delete']);
-		Route::get('edit/{id}',['as' =>'admin.tintuc.getEdit','uses' => 'ArticleController@getEdit']);
-		Route::post('edit/{id}',['as' =>'admin.tintuc.getEdit','uses' => 'ArticleController@postEdit']);
+	Route::group(['prefix' => 'article'],function(){
+		Route::get('add',['as' => 'admin.article.getAdd','uses' => 'ArticleController@getAdd']);
+		Route::post('add',['as' => 'admin.article.postAdd','uses' => 'ArticleController@postAdd']);
+		Route::get('list',['as' =>'admin.article.getList','uses' => 'ArticleController@getList']);
+		Route::get('delete/{id}',['as' =>'admin.article.getDelete','uses' => 'ArticleController@delete']);
+		Route::get('edit/{id}',['as' =>'admin.article.getEdit','uses' => 'ArticleController@getEdit']);
+		Route::post('edit/{id}',['as' =>'admin.article.getEdit','uses' => 'ArticleController@postEdit']);
 	});
 	Route::group(['prefix' => 'cart'],function(){
 		Route::get('list',['as' => 'admin.cart.getCart','uses' => 'CartController@listcart']);
@@ -40,8 +40,8 @@ Route::group(['prefix' =>'admin','middleware' => 'auth'],function(){
 	});
 });
 Route::get('san-pham',['as' => 'sanpham','uses' => 'PageController@category']);
-Route::get('dang-ky',['as' => 'dangky','uses' => 'PageController@getDangky']);
-Route::post('dang-ky',['as' => 'dangky','uses' => 'PageController@postDangky']);
+Route::get('register',['as' => 'dangky','uses' => 'PageController@getDangky']);
+Route::post('register',['as' => 'dangky','uses' => 'PageController@postDangky']);
 Route::get('gio-hang',['as' => 'giohang','uses' => 'PageController@giohang']);
 Route::get('addtocart/{id}',['as' => 'themvaogio','uses' => 'PageController@addtocart']);
 Route::get('huy-gio-hang',['as' => 'huygiohang','uses' => 'PageController@huygiohang']);
@@ -50,8 +50,8 @@ Route::get('update-cart/{id}/{qty}',['as' => 'updatecart','uses' => 'PageControl
 Route::get('thanh-toan',['as' => 'thanhtoan','uses' =>'PageController@thanhtoan']);
 Route::post('thanh-toan',['as' => 'thanhtoan','uses' =>'PageController@postthanhtoan']);
 Route::get('danh-gia',['as' => 'danhgia','uses' =>'PageController@danhgia']);
-Route::get('lien-he',['as' => 'lienhe','uses' =>'PageController@lienhe']);
-Route::post('lien-he',['as' => 'lienhe','uses' =>'PageController@postlienhe']);
+Route::get('contact',['as' => 'contact','uses' =>'PageController@contact']);
+Route::post('contact',['as' => 'contact','uses' =>'PageController@postcontact']);
 Route::get('administrator/login',['as' => 'administrator.login','uses' => 'Auth\AuthController@getLogin']);
 Route::post('administrator/login',['as' => 'administrator.login','uses' => 'Auth\AuthController@postLogin']);
 Route::get('administrator/register',['as' => 'administrator.register','uses' => 'Auth\AuthController@getRegister']);

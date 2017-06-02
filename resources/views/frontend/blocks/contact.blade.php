@@ -1,6 +1,6 @@
 @extends('frontend.master')
-@section('title','Liên hệ')
-@section('lienhe','active')
+@section('title','Contact')
+@section('contact','active')
 @section('content')
 <div id="content">
   <section class="">
@@ -8,8 +8,8 @@
       <div class="row">
         <div class="col-md-12">
           <ul class="breadcrumb">
-            <li><a href="/">Trang chủ</a></li>
-            <li class="active">Liên hệ</li>
+            <li><a href="/">Home</a></li>
+            <li class="active">Contact</li>
           </ul>
         </div>
       </div>

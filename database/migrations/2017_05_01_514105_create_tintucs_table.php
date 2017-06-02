@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTintucsTable extends Migration {
+class CreateArticlesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateTintucsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('tintucs', function(Blueprint $table)
+		Schema::create('articles', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('name');
@@ -35,7 +35,7 @@ class CreateTintucsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('tintucs');
+		Schema::drop('articles');
 	}
 
 }

@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col-md-12">
         <ul class="breadcrumb">
-          <li><a href="{!! asset('/') !!}">Trang chủ</a></li>
+          <li><a href="{!! asset('/') !!}">Home</a></li>
           <li class="active">Danh mục</li>
         </ul>
       </div>

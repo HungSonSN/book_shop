@@ -12,7 +12,7 @@
                 <label class="control-label">THÔNG TIN MUA HÀNG</label>
               </h2>
             </div>
-            <div class="form-group"> <a href="dang-ky.html">Đăng ký tài khoản mua hàng</a> | <a href="dang-nhap.html">Đăng nhập </a> </div>
+            <div class="form-group"> <a href="Register.html">Register tài khoản mua hàng</a> | <a href="dang-nhap.html">Đăng nhập </a> </div>
             <hr class="divider">
             <div class="form-group">
               <input name="txtEmail" class="form-control txtEmail" value="{!! old('txtEmail') !!}" placeholder="Vui lòng nhập Email">
